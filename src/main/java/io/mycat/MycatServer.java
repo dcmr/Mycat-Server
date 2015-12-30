@@ -86,7 +86,9 @@ public class MycatServer {
 	private ListeningExecutorService listeningExecutorService;
 
 	private ClusterSync clusterSync;
-
+/**
+ * 准备好 缓存、 路由、sql拦截、catlet类加载器
+ */
 	public MycatServer() {
 		this.config = new MycatConfig();
 		this.timer = new Timer(NAME + "Timer", true);
